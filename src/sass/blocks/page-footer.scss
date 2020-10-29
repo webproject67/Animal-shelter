@@ -1,0 +1,61 @@
+.page-footer {
+  background: #25201f url("/img/dog-footer@1x.jpg") no-repeat center top;
+}
+
+.page-footer__wrapper {
+  display: flex;
+	width: 1200px; 
+	margin: 0 auto;
+	padding: 69px 15px 68px;  
+}
+
+.page-footer__contacts {
+  margin-right: 147px;
+}
+
+.page-footer__title {
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 45px;
+  letter-spacing: 2px;
+}
+
+.page-footer__email,
+.page-footer__tel,
+.page-footer__address {
+  position: relative;
+  display: block;
+  padding: 37px 63px 7px;
+  font-family: 'Times New Roman';
+  color: #f1cdb3;
+  font-size: 20px;
+  letter-spacing: 1.4px;
+}
+
+.page-footer__address {
+  padding: 27px 45px 3px;
+  text-align: start;
+  background-color: transparent;
+  border: none;
+}
+
+.page-footer__icon {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  fill: #f1cdb4;
+
+  &--pin {
+    left: -5px;
+    width: 36px;
+    height: 36px;
+
+    &:last-child {
+      top: 19px;
+    }
+  }
+}
