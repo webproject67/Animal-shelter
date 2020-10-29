@@ -1,0 +1,64 @@
+.donation {
+  background-color: #f6f6f6;
+}
+
+.donation__wrapper {
+  display: flex;
+  align-items: end;
+  width: 1140px;
+  margin: 0 auto;
+  padding-bottom: 70px;
+}
+
+.donation__img {
+  padding-top: 50px;
+}
+
+.donation__description {
+  width: 365px;
+  margin-left: 66px;
+}
+
+
+.donation__title {
+  margin: 26px 0 21px;
+  font-family: Georgia;
+  font-size: 35px;
+  line-height: 45px;
+  letter-spacing: 2px;
+}
+
+.donation__name {
+  font-family: Georgia;
+  letter-spacing: 1px;
+}
+
+.donation__number {
+  position: relative;
+  width: 317px;
+  margin: 0;
+  padding: 13px 0 13px 56px;
+  font-family: 'Times New Roman';
+  color: #292929;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  border-radius: 9px;
+  background-color: #f1cdb3;
+}
+
+.donation__icon {
+  position: absolute;
+  top: 6px;
+  left: 12px;
+  width: 30px;
+  height: 30px; 
+}
+
+.donation__text {
+  margin-top: 25px;
+  color: #b2b2b2;
+  font-size: 12px;
+  font-style: italic;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+}
