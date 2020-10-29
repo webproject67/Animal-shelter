@@ -1,0 +1,41 @@
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav__logo {
+  margin-top: 40px;
+  font-family: Georgia;
+  color: #f1cdb3;
+  font-size: 35px;
+
+  &--font-family {
+    display: block;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 21px;
+    letter-spacing: 1.4px; 
+  }
+}
+
+.main-nav__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.main-nav__item {
+  padding-left: 37px;
+}
+
+.main-nav__link {
+  color: #cdcdcd;
+  line-height: 29px;
+
+  &:hover {
+    padding-bottom: 6px;
+    color: #ffffff;
+    border-bottom: 3px solid #f1cdb3;
+  }
+}

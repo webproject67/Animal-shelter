@@ -1,0 +1,46 @@
+.page-header {
+  background: #25201f url("/img/dog-header@1x.jpg") no-repeat center bottom;
+}
+
+.page-header__wrapper {
+	width: 1200px; 
+	margin: 0 auto;
+	padding: 12px 15px 267px;  
+}
+
+.page-header__house {
+  padding-top: 175px;
+  width: 463px;
+}
+
+.page-header__title {
+  margin-bottom: 26px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 44px;
+  line-height: 57px;
+  letter-spacing: 2.7px;
+}
+
+.page-header__text {
+  margin: 0 0 37px;
+  color: #cdcdcd;
+  line-height: 24px;
+  letter-spacing: -0.2px; 
+}
+
+.page-header__btn {
+  padding: 0 44px; 
+  font-family: Georgia;
+  color: #292929;
+  font-size: 17px;
+  line-height: 57px;
+  letter-spacing: 1px;
+  border: 0;
+  border-radius: 50px;
+  background-color: #f1cdb3;
+  
+  &:hover {
+    background-color: #fddcc4;
+  }
+}
