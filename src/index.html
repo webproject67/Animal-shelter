@@ -44,7 +44,10 @@
 	</header>
 	<main class="page-main">
 		<section class="cozy-house">
-			<img class="cozy-house__img" src="./img/Cozy-House@1x.png" alt="Cozy-House">
+			<picture>
+				<source type="image/webp" srcset="./img/webp/Cozy-House@1x.webp 1x, ./img/webp/Cozy-House@2x.webp 2x">
+				<img class="cozy-house__img" src="./img/Cozy-House@1x.png" srcset="./img/Cozy-House@2x.png 2x" alt="Cozy-House">
+			</picture>
 			<div class="cozy-house__description">
 				<h2 class="cozy-house__title">About the shelter <br> “Cozy House”</h2>
 				<p class="cozy-house__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gravida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc.</p>
@@ -145,7 +148,10 @@
 		</section>
 		<section class="donation">
 			<div class="donation__wrapper">
-				<img class="donation__img" src="./img/Dog@1x.png" alt="dog">
+				<picture>
+					<source type="image/webp" srcset="./img/webp/Dog@1x.webp 1x, ./img/webp/Dog@2x.webp 2x">
+					<img class="donation__img" src="./img/Dog@1x.png" srcset="./img/Dog@2x.png 2x" alt="dog">
+				</picture>
 				<div class="donation__description">
 					<h2 class="donation__title">In addition, you <br> can make a donation</h2>
 					<p class="donation__name">Name of the bank / Type of bank account</p>
