@@ -32,6 +32,7 @@
   color: #f1cdb3;
   font-size: 20px;
   letter-spacing: 1.4px;
+  transition: all 0.4s ease;
 
   &:hover  {
     color: #ffffff;
@@ -42,24 +43,9 @@
   }
 }
 
-// .page-footer__email,
-// .page-footer__tel,
-// .page-footer__address .page-footer__icon {
-//   position: relative;
-//   display: block;
-//   padding: 37px 63px 7px;
-//   font-family: 'Times New Roman';
-//   color: #f1cdb3;
-//   font-size: 20px;
-//   letter-spacing: 1.4px;
-
-//   &:hover {
-//     color: #ffffff;
-//   }
-// }
-
 .page-footer__address {
-  padding: 27px 45px 3px;
+  padding: 0 45px;
+  margin: 28px 0 0;
   text-align: start;
   background-color: transparent;
   border: none;
@@ -72,14 +58,19 @@
   width: 40px;
   height: 40px;
   fill: #f1cdb4;
+  transition: all 0.4s ease;
 
   &--pin {
     left: -5px;
     width: 36px;
     height: 36px;
 
+    &:first-child {
+      top: 4px;
+    }
+
     &:last-child {
-      top: 19px;
+      top: -5px;
     }
   }
 }
