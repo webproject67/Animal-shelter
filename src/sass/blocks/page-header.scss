@@ -1,11 +1,19 @@
 .page-header {
   background: #25201f url("/img/dog-header@1x.jpg") no-repeat center bottom;
+
+  &--background {
+    background: #fafafa;
+  }
 }
 
 .page-header__wrapper {
 	width: 1200px; 
 	margin: 0 auto;
-	padding: 12px 15px 267px;  
+  padding: 12px 15px 267px;  
+  
+  &--padding {
+    padding: 12px 15px 17px;  
+  }
 }
 
 .page-header__house {

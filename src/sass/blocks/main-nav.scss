@@ -9,6 +9,11 @@
   color: #f1cdb3;
   font-size: 35px;
 
+  &--color {
+    margin: 11px 0;
+    color: #545454;
+  }
+
   &--font-family {
     display: block;
     font-family: Arial;
@@ -16,6 +21,10 @@
     font-size: 13px;
     line-height: 21px;
     letter-spacing: 1.4px; 
+  }
+
+  &--color1 {
+    color: #292929;
   }
 }
 
@@ -38,4 +47,13 @@
     color: #ffffff;
     border-bottom: 3px solid #f1cdb3;
   }
+  
+  &--color {
+    color: #545454;
+
+    &:hover {
+      color: #292929;
+    }
+  }
+
 }
