@@ -32,7 +32,31 @@
   color: #f1cdb3;
   font-size: 20px;
   letter-spacing: 1.4px;
+
+  &:hover  {
+    color: #ffffff;
+  }
+
+  &:hover .page-footer__icon {
+    fill: #ffffff;
+  }
 }
+
+// .page-footer__email,
+// .page-footer__tel,
+// .page-footer__address .page-footer__icon {
+//   position: relative;
+//   display: block;
+//   padding: 37px 63px 7px;
+//   font-family: 'Times New Roman';
+//   color: #f1cdb3;
+//   font-size: 20px;
+//   letter-spacing: 1.4px;
+
+//   &:hover {
+//     color: #ffffff;
+//   }
+// }
 
 .page-footer__address {
   padding: 27px 45px 3px;
