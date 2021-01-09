@@ -1,6 +1,4 @@
 import React, {Fragment} from "react";
-import Picture from "react-picture-webp";
-import {cozyHouse, dog} from "../../pictures/pictures";
 
 export default () => (
   <Fragment>
@@ -32,7 +30,7 @@ export default () => (
     </header>
     <main className="page-main">
       <section className="cozy-house">
-        <Picture {...cozyHouse} />
+        <img className="cozy-house__img" src="img/desktop/Cozy-House@1x.png" srcSet="img/desktop/Cozy-House@2x.png 2x" alt="Cozy-House"/>
         <div className="cozy-house__description">
           <h2 className="cozy-house__title">About the shelter <br/> “Cozy House”</h2>
           <p className="cozy-house__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit condimentum. Proin accumsan lorem vel gravida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc.</p>
@@ -133,7 +131,7 @@ export default () => (
       </section>
       <section className="donation">
         <div className="donation__wrapper">
-          <Picture {...dog} />
+          <img className="donation__img" src="img/desktop/Dog@1x.png" srcSet="img/desktop/Dog@2x.png 2x" alt="dog"/>
           <div className="donation__description">
             <h2 className="donation__title">In addition, you <br/> can make a donation</h2>
             <p className="donation__name">Name of the bank / Type of bank account</p>
