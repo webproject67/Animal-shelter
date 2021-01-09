@@ -50,20 +50,8 @@ module.exports = {
     }),
     new CopyPlugin([
       {
-        from: path.resolve(__dirname, 'src/fonts'),
-        to: path.resolve(__dirname, 'public/fonts')
-      },
-      {
         from: path.resolve(__dirname, 'src/img/desktop'),
         to: path.resolve(__dirname, 'public/img/desktop')
-      },
-      {
-        from: path.resolve(__dirname, 'src/img/tablet'),
-        to: path.resolve(__dirname, 'public/img/tablet')
-      },
-      {
-        from: path.resolve(__dirname, 'src/img/mobile'),
-        to: path.resolve(__dirname, 'public/img/mobile')
       },
       {
         from: path.resolve(__dirname, 'src/favicon/*.{png,svg}'),

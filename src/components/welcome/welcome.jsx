@@ -1,6 +1,7 @@
 import React, {Fragment} from "react";
+import PropTypes from "prop-types";
 
-export default () => (
+const Welcome = (props) => (
   <Fragment>
     <header className="page-header">
       <div className="page-header__wrapper">
@@ -41,21 +42,13 @@ export default () => (
         <div className="friends__wrapper">
           <h2 className="friends__title">Our friends who <br/>	are looking for a house</h2>
           <ul className="friends__list">
-            <li className="friends__item">
-              <img className="friends__img" src="img/desktop/Cat@1x.jpg" srcSet="img/desktop/Cat@2x.jpg 2x" alt="Katrine"/>
-              <p className="friends__name">Katrine</p>
-              <button className="friends__link">Learn More</button>
-            </li>
-            <li className="friends__item">
-              <img className="friends__img" src="img/desktop/Dog1@1x.jpg" srcSet="img/desktop/Dog1@2x.jpg 2x" alt="Jennifer"/>
-              <p className="friends__name">Jennifer</p>
-              <button className="friends__link">Learn More</button>
-            </li>
-            <li className="friends__item">
-              <img className="friends__img" src="img/desktop/Dog2@1x.jpg" srcSet="img/desktop/Dog2@2x.jpg 2x" alt="Woody"/>
-              <p className="friends__name">Woody</p>
-              <button className="friends__link">Learn More</button>
-            </li>
+            {props.base.map((elem, i) => (
+              <li key={i} className="friends__item">
+                <img className="friends__img" src={`img/desktop/${elem.src}@1x.jpg`} srcSet={`img/desktop/${elem.src}@2x.jpg 2x`} alt={elem.name}/>
+                <p className="friends__name">{elem.name}</p>
+                <button className="friends__link">Learn More</button>
+              </li>
+            ))}
           </ul>
           <button className="friends__arrow friends__arrow--left" aria-label="arrow">
             <svg className="friends__icon">
@@ -145,4 +138,15 @@ export default () => (
       </section>
     </main>
   </Fragment>
-)
+);
+
+Welcome.propTypes = {
+  base: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      src: PropTypes.string.isRequired
+    }).isRequired
+  ).isRequired,
+};
+
+export default Welcome;

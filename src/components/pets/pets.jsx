@@ -1,6 +1,7 @@
 import React, {Fragment} from "react";
+import PropTypes from "prop-types";
 
-export default () => (
+const Pets = (props) => (
   <Fragment>
     <header className="page-header page-header--background">
       <div className="page-header__wrapper page-header__wrapper--padding">
@@ -27,46 +28,13 @@ export default () => (
       <section className="friends friends--padding">
         <h1 className="friends__title">Our friends who <br/> are looking for a house</h1>
         <ul className="friends__list friends__list--width">
-          <li className="friends__item friends__item--margin">
-            <img className="friends__img" src="img/desktop/Cat@1x.jpg" srcSet="img/desktop/Cat@2x.jpg 2x" alt="Katrine"/>
-            <p className="friends__name">Katrine</p>
-            <button className="friends__link">Learn More</button>
-          </li>
-          <li className="friends__item friends__item--margin">
-            <img className="friends__img" src="img/desktop/Dog1@1x.jpg" srcSet="img/desktop/Dog1@2x.jpg 2x" alt="Jennifer"/>
-            <p className="friends__name">Jennifer</p>
-            <button className="friends__link">Learn More</button>
-          </li>
-          <li className="friends__item friends__item--margin">
-            <img className="friends__img" src="img/desktop/Dog2@1x.jpg" srcSet="img/desktop/Dog2@2x.jpg 2x" alt="Woody"/>
-            <p className="friends__name">Woody</p>
-            <button className="friends__link">Learn More</button>
-          </li>
-          <li className="friends__item friends__item--margin">
-            <img className="friends__img" src="img/desktop/Dog3@1x.jpg" srcSet="img/desktop/Dog3@2x.jpg 2x" alt="Sophia"/>
-            <p className="friends__name">Sophia</p>
-            <button className="friends__link">Learn More</button>
-          </li>
-          <li className="friends__item friends__item--margin">
-            <img className="friends__img" src="img/desktop/Cat1@1x.jpg" srcSet="img/desktop/Cat1@2x.jpg 2x" alt="Timmy"/>
-            <p className="friends__name">Timmy</p>
-            <button className="friends__link">Learn More</button>
-          </li>
-          <li className="friends__item friends__item--margin">
-            <img className="friends__img" src="img/desktop/Dog4@1x.jpg" srcSet="img/desktop/Dog4@2x.jpg 2x" alt="Charly"/>
-            <p className="friends__name">Charly</p>
-            <button className="friends__link">Learn More</button>
-          </li>
-          <li className="friends__item friends__item--margin">
-            <img className="friends__img" src="img/desktop/Dog5@1x.jpg" srcSet="img/desktop/Dog5@2x.jpg 2x" alt="Scarlett"/>
-            <p className="friends__name">Scarlett</p>
-            <button className="friends__link">Learn More</button>
-          </li>
-          <li className="friends__item friends__item--margin">
-            <img className="friends__img" src="img/desktop/Cat2@1x.jpg" srcSet="img/desktop/Cat2@2x.jpg 2x" alt="Freddie"/>
-            <p className="friends__name">Freddie</p>
-            <button className="friends__link">Learn More</button>
-          </li>
+          {props.base.map((elem, i) => (
+            <li key={i} className="friends__item friends__item--margin">
+              <img className="friends__img" src={`img/desktop/${elem.src}@1x.jpg`} srcSet={`img/desktop/${elem.src}@2x.jpg 2x`} alt={elem.name}/>
+              <p className="friends__name">{elem.name}</p>
+              <button className="friends__link">Learn More</button>
+            </li>
+          ))}
         </ul>
         <ul className="friends__pagination">
           <li className="friends__page-item">
@@ -88,4 +56,15 @@ export default () => (
       </section>
     </main>
   </Fragment>
-)
+);
+
+Pets.propTypes = {
+  base: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      src: PropTypes.string.isRequired
+    }).isRequired
+  ).isRequired,
+};
+
+export default Pets
