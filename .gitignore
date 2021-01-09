@@ -2,4 +2,12 @@ node_modules
 public
 psd/*.psd
 psd/*.fig
-architecture.txt
+.babelrc
+architecture.drawio
+debug.log
+jest.config.js
+package-lock.json
+package.json
+postcss.config.js
+tsconfig.json
+webpack.config.js

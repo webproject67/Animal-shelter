@@ -1,3 +1,3 @@
 # Animal shelter
-## Фиксированная верстка
+## Фиксированная верстка + React
 ### https://webproject67.github.io/Animal-shelter/

@@ -25,7 +25,8 @@ module.exports = {
     contentBase: path.resolve(__dirname, 'public'),
     compress: true,
     // host: '192.168.42.222',
-    port: 9000
+    port: 9000,
+    historyApiFallback: true
   },
   plugins: [
     new CleanWebpackPlugin(),
@@ -53,12 +54,16 @@ module.exports = {
         to: path.resolve(__dirname, 'public/fonts')
       },
       {
-        from: path.resolve(__dirname, 'src/img/webp'),
-        to: path.resolve(__dirname, 'public/img/webp')
+        from: path.resolve(__dirname, 'src/img/desktop'),
+        to: path.resolve(__dirname, 'public/img/desktop')
       },
       {
-        from: path.resolve(__dirname, 'src/img/*.{png,jpg}'),
-        to: path.resolve(__dirname, 'public/img/[name].[ext]')
+        from: path.resolve(__dirname, 'src/img/tablet'),
+        to: path.resolve(__dirname, 'public/img/tablet')
+      },
+      {
+        from: path.resolve(__dirname, 'src/img/mobile'),
+        to: path.resolve(__dirname, 'public/img/mobile')
       },
       {
         from: path.resolve(__dirname, 'src/favicon/*.{png,svg}'),
@@ -93,7 +98,24 @@ module.exports = {
           extract: true,
           spriteFilename: 'img/svg/sprite.svg'
         }
+      },
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: `babel-loader`
+        }
+      }, {
+        test: /\.(tsx|ts)?$/,
+        loader: `ts-loader`
       }
     ]
-  }
+  },
+  resolve: {
+    extensions: ['.js', '.jsx']
+  },
+  resolve: {
+    extensions: [`.ts`, `.tsx`, `.js`, `json`]
+  },
+  devtool: `source-map`
 }
