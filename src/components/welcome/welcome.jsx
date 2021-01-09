@@ -1,5 +1,16 @@
 import React, {Fragment} from "react";
 import PropTypes from "prop-types";
+import Slider from "react-slick";
+
+const settings = {
+  dots: false,
+  infinite: true,
+  speed: 500,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  slidesToShow: 3,
+  slidesToScroll: 1
+};
 
 const Welcome = (props) => (
   <Fragment>
@@ -41,25 +52,15 @@ const Welcome = (props) => (
       <section className="friends">
         <div className="friends__wrapper">
           <h2 className="friends__title">Our friends who <br/>	are looking for a house</h2>
-          <ul className="friends__list">
+          <Slider {...settings}>
             {props.base.map((elem, i) => (
-              <li key={i} className="friends__item">
+              <div key={i} className="friends__item">
                 <img className="friends__img" src={`img/desktop/${elem.src}@1x.jpg`} srcSet={`img/desktop/${elem.src}@2x.jpg 2x`} alt={elem.name}/>
                 <p className="friends__name">{elem.name}</p>
                 <button className="friends__link">Learn More</button>
-              </li>
+              </div>
             ))}
-          </ul>
-          <button className="friends__arrow friends__arrow--left" aria-label="arrow">
-            <svg className="friends__icon">
-              <use xlinkHref="img/svg/sprite.svg#arrow"></use>
-            </svg>
-          </button>
-          <button className="friends__arrow friends__arrow--right" aria-label="arrow">
-            <svg className="friends__icon">
-              <use xlinkHref="img/svg/sprite.svg#arrow"></use>
-            </svg>
-          </button>
+          </Slider>
           <button className="friends__btn">Get to know the rest</button>
         </div>	
       </section>

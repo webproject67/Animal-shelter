@@ -37,6 +37,7 @@
 }
 
 .friends__item {
+  width: 270px !important; 
   padding-bottom: 31px;
   border-radius: 9px;
   background-color: #fafafa;
@@ -82,46 +83,6 @@
   &:hover {
     background-color: #f1cdb3;
   }
-}
-
-.friends__arrow {
-  position: absolute;
-  top: 49%;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  border: 2px solid #f1cdb3;
-  background-color: transparent;
-  transition: all 0.4s ease;
-
-  &--left {
-    left: 0;
-
-    &:hover {
-      left: -10px;
-    }
-  }
-
-  &--right {
-    right: 0;
-    transform: rotate(180deg);
-
-    &:hover {
-      right: -10px;
-    }
-  }
-
-  &:hover {
-    background-color: #f1cdb3;
-  }
-}
-
-.friends__icon {
-  width: 15px;
-  height: 15px;
 }
 
 .friends__btn {

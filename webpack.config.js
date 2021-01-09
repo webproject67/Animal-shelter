@@ -54,6 +54,10 @@ module.exports = {
         to: path.resolve(__dirname, 'public/img/desktop')
       },
       {
+        from: path.resolve(__dirname, 'src/img/svg/arrow.svg'),
+        to: path.resolve(__dirname, 'public/img/svg/arrow.svg')
+      },
+      {
         from: path.resolve(__dirname, 'src/favicon/*.{png,svg}'),
         to: path.resolve(__dirname, 'public/favicon/[name].[ext]')
       },
