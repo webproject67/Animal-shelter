@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 const Footer = (props) => (
   <Fragment>
     {props.children}
-    <footer className="page-footer">
+    <footer id="Contacts" className="page-footer">
       <div className="page-footer__wrapper">
         <div className="page-footer__contacts">
           <b className="page-footer__title">For questions <br/> and suggestions</b>

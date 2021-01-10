@@ -12,6 +12,11 @@
   &--color {
     margin: 11px 0;
     color: #545454;
+    cursor: pointer; 
+
+    &:hover {
+      color: #f1cdb3; 
+    }
   }
 
   &--font-family {
@@ -26,6 +31,11 @@
   &--color1 {
     color: #292929;
   }
+}
+
+.main-nav__logo--color:hover .main-nav__logo--color1, 
+.main-nav__logo--color1:hover {
+  color: #f1cdb3; 
 }
 
 .main-nav__list {
@@ -58,4 +68,9 @@
     }
   }
 
+}
+
+.main-nav__item:nth-child(2) .main-nav__link--active {
+  padding-bottom: 6px;
+  border-bottom: 3px solid #f1cdb3;
 }

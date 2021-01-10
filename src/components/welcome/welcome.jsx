@@ -58,28 +58,28 @@ class Welcome extends PureComponent {
               <p className="main-nav__logo">Cozy House <span className="main-nav__logo--font-family">Shelter for pets in Boston</span></p>
               <ul className="main-nav__list">
                 <li className="main-nav__item">
-                  <a className="main-nav__link" href="#">About the shelter</a>
+                  <a className="main-nav__link" href="#AboutTheShelter">About the shelter</a>
                 </li>
                 <li className="main-nav__item">
-                  <a className="main-nav__link" href="#">Our pets</a>
+                  <a onClick={this.props.onButtonClick} className="main-nav__link" href="">Our pets</a>
                 </li>
                 <li className="main-nav__item">
-                  <a className="main-nav__link" href="#">To help the shelter</a>
+                  <a className="main-nav__link" href="#ToHelpTheShelter">To help the shelter</a>
                 </li>
                 <li className="main-nav__item">
-                  <a className="main-nav__link" href="#">Contacts</a>
+                  <a className="main-nav__link" href="#Contacts">Contacts</a>
                 </li>
               </ul>
             </nav>
             <section className="page-header__house">
               <h1 className="page-header__title">Not only people <br/> need a house</h1>
               <p className="page-header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida est in porttitor  porttitor. Duis sodales elementum ipsum, vehicula condimentum erat fringilla et.</p>
-              <button className="page-header__btn">Make a friend</button>
+              <a href="#friends" className="page-header__btn">Make a friend</a>
             </section>
           </div>
         </header>
         <main className="page-main">
-          <section className="cozy-house">
+          <section id="AboutTheShelter" className="cozy-house">
             <img className="cozy-house__img" src="img/desktop/Cozy-House@1x.png" srcSet="img/desktop/Cozy-House@2x.png 2x" alt="Cozy-House"/>
             <div className="cozy-house__description">
               <h2 className="cozy-house__title">About the shelter <br/> “Cozy House”</h2>
@@ -87,7 +87,7 @@ class Welcome extends PureComponent {
               <p className="cozy-house__text">Donec consectetur, diam in porta tempus, urna ligula vestibulum nibh, ac ornare felis justo nec leo. Praesent mattis nibh quis ultrices pharetra. Morbi tempus at ante sit amet tristique. Maecenas dignissim justo orci, in laoreet urna dapibus nec. Praesent quis tortor faucibus, tristique ante vitae, dignissim lorem. Sed at ligula et sem mattis gravida ac vel erat.</p>
             </div>
           </section>
-          <section className="friends">
+          <section id="friends" className="friends">
             <div className="friends__wrapper">
               <h2 className="friends__title">Our friends who <br/>	are looking for a house</h2>
               <Slider {...settings}>
@@ -99,10 +99,10 @@ class Welcome extends PureComponent {
                   </div>
                 ))}
               </Slider>
-              <button className="friends__btn">Get to know the rest</button>
+              <a onClick={this.props.onButtonClick} className="friends__btn" href="">Get to know the rest</a>
             </div>	
           </section>
-          <section className="help">
+          <section id="ToHelpTheShelter" className="help">
             <h2 className="help__title">Than you can help <br/> our shelter</h2>
             <ul className="help__list">
               <li className="help__item">
@@ -200,6 +200,7 @@ Welcome.propTypes = {
       src: PropTypes.string.isRequired
     }).isRequired
   ).isRequired,
+  onButtonClick: PropTypes.func.isRequired
 };
 
 export default Welcome;
