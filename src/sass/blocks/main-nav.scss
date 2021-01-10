@@ -58,6 +58,7 @@
     padding-bottom: 6px;
     color: #ffffff;
     border-bottom: 3px solid #f1cdb3;
+    cursor: pointer;
   }
   
   &--color {
@@ -73,4 +74,5 @@
 .main-nav__item:nth-child(2) .main-nav__link--active {
   padding-bottom: 6px;
   border-bottom: 3px solid #f1cdb3;
+  cursor: default;
 }

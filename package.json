@@ -71,6 +71,7 @@
     "react-modal": "^3.12.1",
     "react-picture-webp": "^1.1.9",
     "react-redux": "^7.2.2",
+    "react-scroll": "^1.8.1",
     "react-slick": "^0.27.13",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",

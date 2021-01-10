@@ -2,6 +2,7 @@ import React, {Fragment, PureComponent} from "react";
 import PropTypes from "prop-types";
 import Modal from 'react-modal';
 import ModalWindow from '../modal/modal.jsx';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 Modal.setAppElement('#root')
 
@@ -36,7 +37,7 @@ class Pets extends PureComponent {
               <p onClick={this.props.onButtonClick} className="main-nav__logo main-nav__logo--color">Cozy House <span className="main-nav__logo--font-family main-nav__logo--color1">Shelter for pets in Boston</span></p>
               <ul className="main-nav__list">
                 <li className="main-nav__item">
-                  <a onClick={this.props.onButtonClick} className="main-nav__link main-nav__link--color" href="#AboutTheShelter">About the shelter</a>
+                  <Link onClick={this.props.onButtonClick} className="main-nav__link main-nav__link--color" to="AboutTheShelter">About the shelter</Link>
                 </li>
                 <li className="main-nav__item">
                   <a className="main-nav__link main-nav__link--color main-nav__link--active">Our pets</a>
@@ -45,7 +46,7 @@ class Pets extends PureComponent {
                   <a onClick={this.props.onButtonClick} className="main-nav__link main-nav__link--color" href="#ToHelpTheShelter">To help the shelter</a>
                 </li>
                 <li className="main-nav__item">
-                  <a className="main-nav__link main-nav__link--color" href="#Contacts">Contacts</a>
+                  <Link className="main-nav__link main-nav__link--color" to="Contacts" spy={true} smooth={true} offset={-70} duration={500}>Contacts</Link>
                 </li>
               </ul>
             </nav>

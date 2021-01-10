@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import Slider from "react-slick";
 import Modal from 'react-modal';
 import ModalWindow from '../modal/modal.jsx';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 Modal.setAppElement('#root')
 
@@ -47,23 +48,23 @@ class Welcome extends PureComponent {
               <p className="main-nav__logo">Cozy House <span className="main-nav__logo--font-family">Shelter for pets in Boston</span></p>
               <ul className="main-nav__list">
                 <li className="main-nav__item">
-                  <a className="main-nav__link" href="#AboutTheShelter">About the shelter</a>
+                  <Link className="main-nav__link" to="AboutTheShelter" spy={true} smooth={true} offset={-70} duration={500}>About the shelter</Link>
                 </li>
                 <li className="main-nav__item">
                   <a onClick={this.props.onButtonClick} className="main-nav__link" href="">Our pets</a>
                 </li>
                 <li className="main-nav__item">
-                  <a className="main-nav__link" href="#ToHelpTheShelter">To help the shelter</a>
+                  <Link className="main-nav__link" to="ToHelpTheShelter" spy={true} smooth={true} offset={-70} duration={500}>To help the shelter</Link>
                 </li>
                 <li className="main-nav__item">
-                  <a className="main-nav__link" href="#Contacts">Contacts</a>
+                  <Link className="main-nav__link" to="Contacts" spy={true} smooth={true} offset={-70} duration={500}>Contacts</Link>
                 </li>
               </ul>
             </nav>
             <section className="page-header__house">
               <h1 className="page-header__title">Not only people <br/> need a house</h1>
               <p className="page-header__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida est in porttitor  porttitor. Duis sodales elementum ipsum, vehicula condimentum erat fringilla et.</p>
-              <a href="#friends" className="page-header__btn">Make a friend</a>
+              <Link to="friends" className="page-header__btn" spy={true} smooth={true} offset={-70} duration={500}>Make a friend</Link>
             </section>
           </div>
         </header>
