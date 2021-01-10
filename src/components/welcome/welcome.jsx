@@ -4,17 +4,6 @@ import Slider from "react-slick";
 import Modal from 'react-modal';
 import ModalWindow from '../modal/modal.jsx';
 
-const customStyles = {
-  content : {
-    top                   : '50%',
-    left                  : '50%',
-    right                 : 'auto',
-    bottom                : 'auto',
-    marginRight           : '-50%',
-    transform             : 'translate(-50%, -50%)'
-  }
-};
-
 Modal.setAppElement('#root')
 
 const settings = {
