@@ -14,7 +14,7 @@ interface Answer {
 }
 
 const App: React.FunctionComponent<Props> = (props: Props) => (
-  <BrowserRouter>
+  <BrowserRouter basename="/React">
     <Switch>
       <Route exact 
         path="/"
