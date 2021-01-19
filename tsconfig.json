@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src",
+    "outDir": "./public",
+    "sourceMap": true,
+    "module": "commonjs",
+    "target": "es2016",
+    "jsx": "react",
+    "allowSyntheticDefaultImports": false
+  }
+}

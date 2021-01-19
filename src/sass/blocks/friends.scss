@@ -55,6 +55,10 @@
   &:hover .friends__img{
     transform: scale(1.2);
   }
+
+  &:focus {
+    outline: 0;
+  }
 }
 
 .friends__img{

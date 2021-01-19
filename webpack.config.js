@@ -10,7 +10,7 @@ const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/index.tsx',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'public')
@@ -49,6 +49,10 @@ module.exports = {
       filename: 'style.css'
     }),
     new CopyPlugin([
+      {
+        from: path.resolve(__dirname, 'src/fonts'),
+        to: path.resolve(__dirname, 'public/fonts')
+      },
       {
         from: path.resolve(__dirname, 'src/img/desktop'),
         to: path.resolve(__dirname, 'public/img/desktop')

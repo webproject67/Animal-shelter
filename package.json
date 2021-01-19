@@ -57,6 +57,7 @@
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
+    "@types/react-modal": "^3.10.6",
     "autoprefixer": "^9.7.4",
     "axios": "^0.21.1",
     "glob": "^7.1.6",

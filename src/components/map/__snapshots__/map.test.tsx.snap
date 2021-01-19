@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Map 1`] = `
+<div
+  className="modal-content"
+>
+  <button
+    aria-label="Сancel"
+    className="modal-content__cancel"
+    onClick={[Function]}
+  >
+    <svg
+      className="modal-content__icon"
+    >
+      <use
+        xlinkHref="img/svg/sprite.svg#cancel"
+      />
+    </svg>
+  </button>
+  <div
+    className="modal-content__wrapper"
+  >
+    <iframe
+      aria-hidden="false"
+      frameBorder="0"
+      height="500"
+      src="1"
+      style={
+        Object {
+          "border": 0,
+        }
+      }
+      width="1000"
+    />
+  </div>
+</div>
+`;
