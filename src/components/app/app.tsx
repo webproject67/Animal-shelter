@@ -1,5 +1,5 @@
 import * as React from "react";
-import {Switch, Route, BrowserRouter} from "react-router-dom";
+import {Switch, Route, HashRouter} from "react-router-dom";
 import Footer from "../footer/footer";
 import Welcome from "../welcome/welcome";
 import Pets from "../pets/pets";
@@ -14,7 +14,7 @@ interface Answer {
 }
 
 const App: React.FunctionComponent<Props> = (props: Props) => (
-  <BrowserRouter basename="/React">
+  <HashRouter hashType={'noslash'}>
     <Switch>
       <Route exact 
         path="/"
@@ -39,7 +39,7 @@ const App: React.FunctionComponent<Props> = (props: Props) => (
         )}
       />
     </Switch>
-  </BrowserRouter>
+  </HashRouter>
 );
 
 export default App;

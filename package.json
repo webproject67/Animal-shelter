@@ -21,7 +21,6 @@
   ],
   "author": "Vladislav Project",
   "license": "ISC",
-  "homepage": ".",
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "@babel/preset-env": "^7.12.7",
@@ -65,6 +64,7 @@
     "history": "^5.0.0",
     "imagemin-webpack-plugin": "^2.4.2",
     "leaflet": "^1.7.1",
+    "match-media": "^0.2.0",
     "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",

@@ -7,6 +7,7 @@ Array [
   />,
   <footer
     className="page-footer"
+    id="Contacts"
   >
     <div
       className="page-footer__wrapper"
@@ -60,6 +61,7 @@ Array [
         </b>
         <button
           className="page-footer__address"
+          onClick={[Function]}
         >
           <svg
             className="page-footer__icon page-footer__icon--pin"
@@ -74,6 +76,7 @@ Array [
         </button>
         <button
           className="page-footer__address"
+          onClick={[Function]}
         >
           <svg
             className="page-footer__icon page-footer__icon--pin"

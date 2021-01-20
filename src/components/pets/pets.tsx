@@ -42,7 +42,7 @@ const customStyles = {
   },
 };
 
-ReactModal.setAppElement('#root')
+if (process.env.NODE_ENV !== 'test') ReactModal.setAppElement('#root')
 
 class Pets extends React.PureComponent<Props, State> {
   constructor(props) {
@@ -72,16 +72,16 @@ class Pets extends React.PureComponent<Props, State> {
               <p onClick={this.props.onButtonClick} className="main-nav__logo main-nav__logo--color">Cozy House <span className="main-nav__logo--font-family main-nav__logo--color1">Shelter for pets in Boston</span></p>
               <ul className="main-nav__list">
                 <li className="main-nav__item">
-                  <a onClick={this.props.onButtonClick} className="main-nav__link main-nav__link--color" href="#AboutTheShelter">About the shelter</a>
+                  <a onClick={this.props.onButtonClick} className="main-nav__link main-nav__link--color">About the shelter</a>
                 </li>
                 <li className="main-nav__item">
                   <a className="main-nav__link main-nav__link--color main-nav__link--active">Our pets</a>
                 </li>
                 <li className="main-nav__item">
-                  <a onClick={this.props.onButtonClick} className="main-nav__link main-nav__link--color" href="#ToHelpTheShelter">To help the shelter</a>
+                  <a onClick={this.props.onButtonClick} className="main-nav__link main-nav__link--color">To help the shelter</a>
                 </li>
                 <li className="main-nav__item">
-                  <Link className="main-nav__link main-nav__link--color" to="Contacts">Contacts</Link>
+                  <Link className="main-nav__link main-nav__link--color" to="Contacts" spy={true} smooth={true} offset={-70} duration={500}>Contacts</Link>
                 </li>
               </ul>
             </nav>

@@ -30,7 +30,7 @@ const src = [
   `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317715.71192633547!2d-0.3817840693070167!3d51.52873519756609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2z0JvQvtC90LTQvtC9LCDQktC10LvQuNC60L7QsdGA0LjRgtCw0L3QuNGP!5e0!3m2!1sru!2sru!4v1610275186167!5m2!1sru!2sru`
 ];
 
-ReactModal.setAppElement('#root')
+if (process.env.NODE_ENV !== 'test') ReactModal.setAppElement('#root')
 
 class Footer extends React.PureComponent<Props, State> {
   constructor(props) {

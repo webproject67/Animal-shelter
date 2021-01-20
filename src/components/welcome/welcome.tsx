@@ -43,7 +43,7 @@ const customStyles = {
   },
 };
 
-ReactModal.setAppElement('#root')
+if (process.env.NODE_ENV !== 'test') ReactModal.setAppElement('#root')
 
 class Welcome extends React.PureComponent<Props, State> {
   constructor(props) {
@@ -77,7 +77,7 @@ class Welcome extends React.PureComponent<Props, State> {
                   <Link className="main-nav__link" to="AboutTheShelter" spy={true} smooth={true} offset={-70} duration={500}>About the shelter</Link>
                 </li>
                 <li className="main-nav__item">
-                  <a onClick={this.props.onButtonClick} className="main-nav__link" href="">Our pets</a>
+                  <a onClick={this.props.onButtonClick} className="main-nav__link">Our pets</a>
                 </li>
                 <li className="main-nav__item">
                   <Link className="main-nav__link" to="ToHelpTheShelter" spy={true} smooth={true} offset={-70} duration={500}>To help the shelter</Link>
@@ -115,7 +115,7 @@ class Welcome extends React.PureComponent<Props, State> {
                   </div>
                 ))}
               </Slider>
-              <a onClick={this.props.onButtonClick} className="friends__btn" href="">Get to know the rest</a>
+              <a onClick={this.props.onButtonClick} className="friends__btn">Get to know the rest</a>
             </div>	
           </section>
           <section id="ToHelpTheShelter" className="help">

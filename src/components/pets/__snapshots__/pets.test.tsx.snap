@@ -13,6 +13,7 @@ Array [
       >
         <p
           className="main-nav__logo main-nav__logo--color"
+          onClick={[Function]}
         >
           Cozy House 
           <span
@@ -29,7 +30,8 @@ Array [
           >
             <a
               className="main-nav__link main-nav__link--color"
-              href="#"
+              href="#AboutTheShelter"
+              onClick={[Function]}
             >
               About the shelter
             </a>
@@ -38,8 +40,7 @@ Array [
             className="main-nav__item"
           >
             <a
-              className="main-nav__link main-nav__link--color"
-              href="#"
+              className="main-nav__link main-nav__link--color main-nav__link--active"
             >
               Our pets
             </a>
@@ -49,7 +50,8 @@ Array [
           >
             <a
               className="main-nav__link main-nav__link--color"
-              href="#"
+              href="#ToHelpTheShelter"
+              onClick={[Function]}
             >
               To help the shelter
             </a>
@@ -59,7 +61,7 @@ Array [
           >
             <a
               className="main-nav__link main-nav__link--color"
-              href="#"
+              onClick={[Function]}
             >
               Contacts
             </a>
@@ -86,6 +88,7 @@ Array [
       >
         <li
           className="friends__item friends__item--margin"
+          onClick={[Function]}
         >
           <img
             alt="Katrine"
