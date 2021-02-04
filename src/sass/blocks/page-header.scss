@@ -1,8 +1,8 @@
 .page-header {
-  background: #25201f url("/img/desktop/dog-header@1x.jpg") no-repeat center bottom;
+  background: #25201f url('/img/desktop/dog-header@1x.jpg') no-repeat center bottom;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-		background-image: url("/img/desktop/dog-header@2x.jpg");
+		background-image: url('/img/desktop/dog-header@2x.jpg');
 		background-size: 1920px auto;
   }
 

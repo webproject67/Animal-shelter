@@ -1,8 +1,8 @@
 .page-footer {
-  background: #25201f url("/img/desktop/dog-footer@1x.jpg") no-repeat center top;
+  background: #25201f url('/img/desktop/dog-footer@1x.jpg') no-repeat center top;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-		background-image: url("/img/desktop/dog-footer@2x.jpg");
+		background-image: url('/img/desktop/dog-footer@2x.jpg');
 		background-size: 1920px auto;
 	}
 }

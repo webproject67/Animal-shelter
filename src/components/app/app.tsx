@@ -14,7 +14,7 @@ interface Answer {
 }
 
 const App: React.FunctionComponent<Props> = (props: Props) => (
-  <HashRouter hashType={'noslash'}>
+  <HashRouter hashType={"noslash"}>
     <Switch>
       <Route exact 
         path="/"
@@ -22,7 +22,7 @@ const App: React.FunctionComponent<Props> = (props: Props) => (
           <Footer>
             <Welcome 
               base={props.base}
-              onButtonClick={() => history.push('/pets')}
+              onButtonClick={() => history.push("/pets")}
             />
           </Footer>
         )}
@@ -33,7 +33,7 @@ const App: React.FunctionComponent<Props> = (props: Props) => (
           <Footer>
             <Pets 
               base={props.base}
-              onButtonClick={() => history.push('/')}
+              onButtonClick={() => history.push("/")}
             />
           </Footer>
         )}

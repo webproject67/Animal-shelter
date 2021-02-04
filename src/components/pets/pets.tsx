@@ -1,6 +1,6 @@
 import * as React from "react";
-import * as ReactModal from 'react-modal';
-import Modal from '../modal/modal';
+import * as ReactModal from "react-modal";
+import Modal from "../modal/modal";
 import { Link } from "react-scroll";
 
 interface Props {
@@ -20,19 +20,19 @@ interface State {
 
 const customStyles = {
   content : {
-    top                   : '50%',
-    left                  : '50%',
-    right                 : 'auto',
-    bottom                : 'auto',
-    marginRight           : '-50%',
-    transform             : 'translate(-50%, -50%)',
+    top                   : "50%",
+    left                  : "50%",
+    right                 : "auto",
+    bottom                : "auto",
+    marginRight           : "-50%",
+    transform             : "translate(-50%, -50%)",
   },
   overlay: {
-    backgroundColor: 'rgba(0,0,0,0.5)'
+    backgroundColor: "rgba(0,0,0,0.5)"
   },
 };
 
-if (process.env.NODE_ENV !== 'test') ReactModal.setAppElement('#root')
+if (process.env.NODE_ENV !== "test") ReactModal.setAppElement("#root")
 
 class Pets extends React.PureComponent<Props, State> {
   constructor(props: never) {
