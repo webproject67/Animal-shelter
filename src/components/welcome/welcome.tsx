@@ -2,7 +2,7 @@ import * as React from "react";
 import Slider from "react-slick";
 import * as ReactModal from 'react-modal';
 import Modal from '../modal/modal';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 interface Props {
   base: Answer[];
@@ -46,7 +46,7 @@ const customStyles = {
 if (process.env.NODE_ENV !== 'test') ReactModal.setAppElement('#root')
 
 class Welcome extends React.PureComponent<Props, State> {
-  constructor(props) {
+  constructor(props: never) {
     super(props);
 
     this.state = {
@@ -55,17 +55,17 @@ class Welcome extends React.PureComponent<Props, State> {
     };
   }
 
-  handleOpenModal (i) {
+  handleOpenModal (i: number): void {
     this.setState({ showModal: true });
     this.setState({ number: i });
     console
   }
 
-  handleCloseModal () {
+  handleCloseModal (): void {
     this.setState({ showModal: false });
   }
 
-  render() {
+  render(): React.ReactNode {
     return (
       <React.Fragment>
         <header className="page-header">
@@ -202,6 +202,6 @@ class Welcome extends React.PureComponent<Props, State> {
       </React.Fragment>
     )
   }
-};
+}
 
 export default Welcome;

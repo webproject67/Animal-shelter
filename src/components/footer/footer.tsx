@@ -33,7 +33,7 @@ const src = [
 if (process.env.NODE_ENV !== 'test') ReactModal.setAppElement('#root')
 
 class Footer extends React.PureComponent<Props, State> {
-  constructor(props) {
+  constructor(props: never) {
     super(props);
 
     this.state = {
@@ -42,16 +42,16 @@ class Footer extends React.PureComponent<Props, State> {
     };
   }
 
-  handleOpenModal (i) {
+  handleOpenModal (i: number): void {
     this.setState({ showModal: true });
     this.setState({ number: i });
   }
 
-  handleCloseModal () {
+  handleCloseModal (): void {
     this.setState({ showModal: false });
   }
 
-  render() {
+  render(): React.ReactNode {
     return (
       <React.Fragment>
         {this.props.children}
@@ -91,6 +91,6 @@ class Footer extends React.PureComponent<Props, State> {
       </React.Fragment>
     )
   }
-};
+}
 
 export default Footer; 

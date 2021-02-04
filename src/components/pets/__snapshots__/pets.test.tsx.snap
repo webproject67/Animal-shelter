@@ -30,7 +30,6 @@ Array [
           >
             <a
               className="main-nav__link main-nav__link--color"
-              href="#AboutTheShelter"
               onClick={[Function]}
             >
               About the shelter
@@ -50,7 +49,6 @@ Array [
           >
             <a
               className="main-nav__link main-nav__link--color"
-              href="#ToHelpTheShelter"
               onClick={[Function]}
             >
               To help the shelter

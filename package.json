@@ -8,7 +8,11 @@
     "dev:watch": "webpack --mode development --watch",
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development --open",
-    "jest": "jest"
+    "eslint.js": "eslint --ext .jsx --ext .js src/",
+    "eslint.ts": "eslint --config .eslintrc-ts --ext .tsx src/",
+    "eslint": "npm run eslint.js && npm run eslint.ts",
+    "test.jest": "jest",
+    "test": "npm run eslint && npm run test.jest -- -u"
   },
   "repository": {
     "type": "git",
@@ -57,9 +61,17 @@
     "webpack-dev-server": "^3.10.3"
   },
   "dependencies": {
+    "@types/enzyme-adapter-react-16": "^1.0.6",
     "@types/react-modal": "^3.10.6",
+    "@types/react-scroll": "^1.8.2",
+    "@types/webpack-env": "^1.16.0",
+    "@typescript-eslint/eslint-plugin": "^4.14.2",
+    "@typescript-eslint/parser": "^4.14.2",
     "autoprefixer": "^9.7.4",
     "axios": "^0.21.1",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "eslint": "^7.19.0",
+    "eslint-plugin-react": "^7.22.0",
     "glob": "^7.1.6",
     "history": "^5.0.0",
     "imagemin-webpack-plugin": "^2.4.2",

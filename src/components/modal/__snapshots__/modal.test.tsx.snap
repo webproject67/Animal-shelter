@@ -37,7 +37,7 @@ exports[`Render Modal 1`] = `
       <p
         className="modal-content__type1"
       >
-        Pooch + Labrador
+        Pooch
       </p>
       <p
         className="modal-content__text"
@@ -57,7 +57,7 @@ exports[`Render Modal 1`] = `
             <span
               className="modal-content__type2--color"
             >
-              1
+              3
                months
             </span>
           </p>
@@ -72,7 +72,7 @@ exports[`Render Modal 1`] = `
             <span
               className="modal-content__type2--color"
             >
-              none
+              yes
             </span>
           </p>
         </li>
@@ -86,7 +86,7 @@ exports[`Render Modal 1`] = `
             <span
               className="modal-content__type2--color"
             >
-              none
+              yes
             </span>
           </p>
         </li>
@@ -100,7 +100,7 @@ exports[`Render Modal 1`] = `
             <span
               className="modal-content__type2--color"
             >
-              none
+              yes
             </span>
           </p>
         </li>
